@@ -1,0 +1,54 @@
+%%%   K A L E V A L A   %%%
+
+\documentclass{report}
+
+\usepackage[paperwidth=130mm, paperheight=297mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[finnish]{babel}
+\usepackage{yfonts}
+\usepackage{graphicx}
+\usepackage[names,dvipsnames]{xcolor}
+\usepackage{sectsty}
+
+\title{\textfrak{Kalevala}}
+\author{\textfrak{koonnut:\\Elias Lönnrut}}
+
+%\usepackage{lipsum}
+% Colored initial
+\newcommand{\colorini}[1]{\yinipar{\textcolor{BrickRed}{#1}}}
+
+% Define chapter title
+\allsectionsfont{\color{BrickRed}\textfrak}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+   
+    \textcolor{BrickRed}{\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.4pt}}\\[\baselineskip]
+    \Huge{\textfrak{Kalevala}}
+    \textcolor{BrickRed}{\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+    \rule{\textwidth}{1.6pt}}\\[\baselineskip]
+    %Descriptions and Stuff \\
+    %Things \\
+    %Excitement\par
+    \vspace*{2\baselineskip}
+    
+    \LARGE{\textfrak{Elias: Lönnrot}}
+    
+    \vfill
+    {\scshape year} \\
+    {\large THE PUBLISHER}\par
+	\end{titlepage}
+	
+	\begin{figure}[ht]
+		\centering
+			\includegraphics[width=1.00\textwidth]{./img/kullervo.png}
+%		\caption{Kullervon kirous Akseli Gallen-Kallela}
+%		\label{fig:kullervo}
+	\end{figure}
+	
+	%\input{./tex/01.tex}
+	
+\end{document}
