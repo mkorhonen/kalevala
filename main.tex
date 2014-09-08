@@ -10,6 +10,7 @@
 \usepackage[names,dvipsnames]{xcolor}
 \usepackage{fancyhdr}
 \usepackage{sectsty}
+\usepackage{lettrine}
 
 \title{\textfrak{Kalevala}}
 \author{\textfrak{koonnut:\\Elias Lönnrot}}
@@ -33,8 +34,12 @@
   \renewcommand{\headrulewidth}{0pt}% Line at the header invisible
 }
 
+% Font for dropped caps
+\input MorrisIn.fd
+\renewcommand*\initfamily{\usefont{U}{MorrisIn}{xl}{n}}
+
 % Colored initial
-\newcommand{\colorini}[1]{\yinipar{\textcolor{BrickRed}{#1}}}
+\newcommand{\colorini}[2]{\lettrine[lines=4]{\textcolor{BrickRed}{\initfamily{#1}}}{#2}}
 
 % Define chapter title
 \allsectionsfont{\color{BrickRed}\textfrak}
@@ -78,5 +83,6 @@
 	\input{./tex/05.tex}
 	\input{./tex/06.tex}
 	\input{./tex/07.tex}
+	\input{./tex/08.tex}
 	
 \end{document}
